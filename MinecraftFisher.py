@@ -57,20 +57,24 @@ def fisher():
             click(x,y)
             time.sleep(3)
         except:
-            try:
-                x, y = pyautogui.locateCenterOnScreen('images\\bobber2.png', region=(w2,h2,w1,h1), confidence=0.8)
-                click(x,y)
-                time.sleep(3)
-            except:
-                try:
-                    x, y = pyautogui.locateCenterOnScreen('images\\bobber3.png', region=(w2,h2,w1,h1), confidence=0.8)
-                    click(x,y)
-                    time.sleep(3)
-                except:
-                    os.system('cls')
-                    body()
-                    print("> No detection")
-                    time.sleep(1)
+            pass
+        try:
+            x, y = pyautogui.locateCenterOnScreen('images\\bobber2.png', region=(w2,h2,w1,h1), confidence=0.8)
+            click(x,y)
+            time.sleep(3)
+        except:
+            pass
+        try:
+            x, y = pyautogui.locateCenterOnScreen('images\\bobber3.png', region=(w2,h2,w1,h1), confidence=0.8)
+            click(x,y)
+            time.sleep(3)
+        except:
+            pass
+        finally:
+            os.system('cls')
+            body()
+            print("> No detection")
+            time.sleep(1)
                 
 
 def hotkeys():
