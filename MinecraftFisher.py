@@ -110,6 +110,7 @@ def hotkeys():
 def exit_app():
     global quitFishing
     quitFishing = True
+    time.sleep(3)
     os.system('cls')
     os.system('mode 50, 12')
     print(f"{new_line}"
