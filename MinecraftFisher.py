@@ -12,8 +12,8 @@ running = False
 fish = 0
 new_line = "#"*50+"\n"
 w1,h1 = pyautogui.size()
-w2=w1//round(1.7)#1.5-2
-h2=h1//round(1.7)
+w2=round(w1//1.5)#1.5-2
+h2=round(h1//1.5)
 
 def main():
     os.system('mode 50, 12')
