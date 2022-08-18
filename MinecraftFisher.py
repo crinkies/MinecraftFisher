@@ -53,7 +53,7 @@ def fisher():
         if quitFishing:
             break
         try:
-            x, y = pyautogui.locateCenterOnScreen('images\\bobber.png', region=(w2,h2,w1,h1), confidence=0.8)
+            x, y = pyautogui.locateCenterOnScreen('images\\bobber1.png', region=(w2,h2,w1,h1), confidence=0.8)
             click(x,y)
             time.sleep(3)
         except:
